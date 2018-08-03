@@ -82,13 +82,13 @@ class CardScrollViewController : UIViewController{
             
             button.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
             button.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: CGFloat(offset)).isActive = true
-            button.widthAnchor.constraint(equalToConstant: 337).isActive = true
+            button.widthAnchor.constraint(equalToConstant: 325).isActive = true
             button.heightAnchor.constraint(equalToConstant: 171).isActive = true
             
             label.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
             label.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: CGFloat(offset)).isActive = true
             offset += (labelHieght + margin)
-            label.widthAnchor.constraint(equalToConstant: 337).isActive = true
+            label.widthAnchor.constraint(equalToConstant: 325).isActive = true
             label.heightAnchor.constraint(equalToConstant: 171).isActive = true
             
         }
