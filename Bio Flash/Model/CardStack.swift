@@ -21,6 +21,21 @@ class CardStack{
         cards.append(Question(question: "Who is the boss", answer: "Kris is the boss"))
         
         
+        
+        cards.append(Question(question: "What is a random question to take use up a lot of space", answer: "This is"))
+        cards.append(Question(question: "What is a random question to take use up a lot of space", answer: "This is"))
+        cards.append(Question(question: "What is a random question to take use up a lot of space", answer: "This is"))
+        cards.append(Question(question: "What is a random question to take use up a lot of space", answer: "This is"))
+        cards.append(Question(question: "What is a random question to take use up a lot of space", answer: "This is"))
+        cards.append(Question(question: "What is a random question to take use up a lot of space", answer: "This is"))
+        cards.append(Question(question: "What is a random question to take use up a lot of space", answer: "This is"))
+        cards.append(Question(question: "What is a random question to take use up a lot of space", answer: "This is"))
+        cards.append(Question(question: "What is a random question to take use up a lot of space", answer: "This is"))
+        cards.append(Question(question: "What is a random question to take use up a lot of space", answer: "This is"))
+        cards.append(Question(question: "What is a random question to take use up a lot of space", answer: "This is"))
+        cards.append(Question(question: "What is a random question to take use up a lot of space", answer: "This is"))
+        
+        
     }
     
 }

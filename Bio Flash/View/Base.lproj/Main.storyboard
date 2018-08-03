@@ -18,49 +18,105 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="27300605837_8c634f461d_b" translatesAutoresizingMaskIntoConstraints="NO" id="Rvc-Eh-zxc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="27300605837_8c634f461d_b" translatesAutoresizingMaskIntoConstraints="NO" id="Rvc-Eh-zxc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Biology 1362 Exam 3 Flash Cards" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DEr-2I-9Lt">
-                                <rect key="frame" x="16" y="28" width="337" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.5799977892" green="0.84135072970000002" blue="0.82817563260000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="27"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaJ-Gj-aIC" userLabel="viewCardsButton">
-                                <rect key="frame" x="143" y="533" width="88" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.48298699239035536" blue="0.15272447920935631" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="View Cards">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="viewCardsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GsQ-8q-7l4"/>
-                                    <segue destination="bMk-iC-YsW" kind="show" id="AwF-rK-EJw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="3gN-MH-D83" userLabel="cardButton">
-                                <rect key="frame" x="16" y="121" width="337" height="171"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Tap here to begin"/>
-                                <connections>
-                                    <action selector="cardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ivN-ua-efp"/>
-                                </connections>
-                            </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RR6-mQ-lLz">
-                                <rect key="frame" x="16" y="300" width="337" height="225"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bb-Hc-W0P" userLabel="Question Container">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Biology 1362 Exam 3 Flash Cards" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DEr-2I-9Lt">
+                                        <rect key="frame" x="19" y="35" width="337" height="81"/>
+                                        <color key="backgroundColor" red="0.5799977892" green="0.84135072970000002" blue="0.82817563260000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="337" id="C9m-92-ZfQ"/>
+                                            <constraint firstAttribute="height" constant="81" id="qbD-5q-igO"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="27"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="DEr-2I-9Lt" firstAttribute="centerY" secondItem="4bb-Hc-W0P" secondAttribute="centerY" id="qlQ-Q9-K7z"/>
+                                    <constraint firstItem="DEr-2I-9Lt" firstAttribute="centerX" secondItem="4bb-Hc-W0P" secondAttribute="centerX" id="tqg-Ii-YJe"/>
+                                    <constraint firstAttribute="height" constant="150" id="xpr-mB-jID"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcv-jd-yjx" userLabel="View Cards Container">
+                                <rect key="frame" x="0.0" y="521" width="375" height="146"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaJ-Gj-aIC" userLabel="viewCardsButton">
+                                        <rect key="frame" x="149" y="58" width="78" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.48298699239035536" blue="0.15272447920935631" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="View Cards">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="viewCardsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GsQ-8q-7l4"/>
+                                            <segue destination="bMk-iC-YsW" kind="show" id="AwF-rK-EJw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="GaJ-Gj-aIC" firstAttribute="centerX" secondItem="dcv-jd-yjx" secondAttribute="centerX" id="BVL-hq-Kdq"/>
+                                    <constraint firstItem="GaJ-Gj-aIC" firstAttribute="centerY" secondItem="dcv-jd-yjx" secondAttribute="centerY" id="SmL-uS-na7"/>
+                                    <constraint firstAttribute="height" constant="146" id="Wc1-IE-AHa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kxj-7t-N9o" userLabel="Answer Container">
+                                <rect key="frame" x="0.0" y="150" width="375" height="371"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RR6-mQ-lLz">
+                                        <rect key="frame" x="0.0" y="187" width="375" height="184"/>
+                                        <color key="backgroundColor" red="0.96745671030000002" green="1" blue="0.9664521184" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="184" id="et2-uB-qsW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="3gN-MH-D83" userLabel="cardButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="187"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="187" id="3p8-sB-vmf"/>
+                                            <constraint firstAttribute="height" constant="187" id="Jwb-cd-Ihk"/>
+                                        </constraints>
+                                        <state key="normal" title="Tap here to begin"/>
+                                        <connections>
+                                            <action selector="cardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ivN-ua-efp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RR6-mQ-lLz" firstAttribute="top" secondItem="3gN-MH-D83" secondAttribute="bottom" id="aE4-7M-W7V"/>
+                                    <constraint firstAttribute="trailing" secondItem="RR6-mQ-lLz" secondAttribute="trailing" id="cDS-Nj-8Lz"/>
+                                    <constraint firstItem="RR6-mQ-lLz" firstAttribute="leading" secondItem="kxj-7t-N9o" secondAttribute="leading" id="hVo-M9-f24"/>
+                                    <constraint firstAttribute="trailing" secondItem="3gN-MH-D83" secondAttribute="trailing" id="k6t-qT-pEM"/>
+                                    <constraint firstItem="3gN-MH-D83" firstAttribute="leading" secondItem="kxj-7t-N9o" secondAttribute="leading" id="pzb-hJ-mWJ"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dcv-jd-yjx" firstAttribute="top" secondItem="kxj-7t-N9o" secondAttribute="bottom" id="2cM-Z7-c1y"/>
+                            <constraint firstItem="dcv-jd-yjx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2u0-ET-XSe"/>
+                            <constraint firstItem="4bb-Hc-W0P" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5dF-4o-pCQ"/>
+                            <constraint firstItem="kxj-7t-N9o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6rn-KJ-zx7"/>
+                            <constraint firstItem="kxj-7t-N9o" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FWF-td-ClE"/>
+                            <constraint firstItem="dcv-jd-yjx" firstAttribute="top" secondItem="kxj-7t-N9o" secondAttribute="bottom" id="IP6-CQ-jKC"/>
+                            <constraint firstItem="kxj-7t-N9o" firstAttribute="top" secondItem="4bb-Hc-W0P" secondAttribute="bottom" id="KPP-FV-2vP"/>
+                            <constraint firstItem="Rvc-Eh-zxc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QfS-f4-9hQ"/>
+                            <constraint firstItem="4bb-Hc-W0P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UAR-Zm-MBF"/>
+                            <constraint firstItem="dcv-jd-yjx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X0h-EP-Rjg"/>
+                            <constraint firstItem="kxj-7t-N9o" firstAttribute="top" secondItem="4bb-Hc-W0P" secondAttribute="bottom" id="eAZ-ob-W6O"/>
+                            <constraint firstItem="dcv-jd-yjx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gKv-DY-LQk"/>
+                            <constraint firstItem="3gN-MH-D83" firstAttribute="top" secondItem="4bb-Hc-W0P" secondAttribute="bottom" id="hMH-Q8-aNe"/>
+                            <constraint firstItem="Rvc-Eh-zxc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mhm-bg-H3k"/>
+                            <constraint firstItem="Rvc-Eh-zxc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qGj-g1-aI7"/>
+                            <constraint firstItem="4bb-Hc-W0P" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="u9K-tF-vm0"/>
+                            <constraint firstItem="Rvc-Eh-zxc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yQO-oM-i7E"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>

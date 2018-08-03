@@ -89,6 +89,7 @@ class ViewController: UIViewController, CanReceive {
         if segue.identifier == nil{
             let secondVC = segue.destination as! CardScrollViewController
             secondVC.delegate = self
+            self.onWelcomeCard = false
         }
     }
     override func didReceiveMemoryWarning() {
