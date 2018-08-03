@@ -18,6 +18,9 @@ class CardStack{
         cards.append(Question(question: "What are some examples of macroevolution?", answer: "The emergence of terrestrial vertebrates through speciation events\n The impact of mass extinctions on diversity\n The origin of key adaptations like flight in birds"))
         
         cards.append(Question(question: "What are \"strata\"", answer: "Layers of sedimentary rock that preserves fossils"))
+        cards.append(Question(question: "Who is the boss", answer: "Kris is the boss"))
+        
+        
     }
     
 }

@@ -39,6 +39,7 @@
                                 </state>
                                 <connections>
                                     <action selector="viewCardsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GsQ-8q-7l4"/>
+                                    <segue destination="bMk-iC-YsW" kind="show" id="AwF-rK-EJw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="3gN-MH-D83" userLabel="cardButton">
@@ -72,6 +73,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Card Scroll View Controller-->
+        <scene sceneID="O2T-YA-qWb">
+            <objects>
+                <viewController storyboardIdentifier="CardScrollViewController" id="bMk-iC-YsW" customClass="CardScrollViewController" customModule="Bio_Flash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W53-Mu-DJQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.86578761670000004" green="1" blue="0.98611260960000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Pur-8W-nzW"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="667"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="htN-S8-Raz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.60000000000002" y="141.67916041979012"/>
         </scene>
     </scenes>
     <resources>

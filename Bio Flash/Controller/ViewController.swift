@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CanReceive {
 
     var cardIndex = 0
     let stack = CardStack()
@@ -72,8 +72,24 @@ class ViewController: UIViewController {
 
     }
     
+    func dataRecieved(data: String) {
+        print("VC data received called")
+        cardIndex = Int(data)!
+        cardProperties.setTitle(stack.cards[cardIndex].question, for: UIControlState.normal)
+        cardAnswerLabel.isHidden = true
+        cardAnswerLabel.isHidden = true
+        answershown = false
+    }
     
     @IBAction func viewCardsButton(_ sender: Any) {
+        //segues to the list of cards
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == nil{
+            let secondVC = segue.destination as! CardScrollViewController
+            secondVC.delegate = self
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
