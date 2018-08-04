@@ -22,10 +22,10 @@ class ViewController: UIViewController, CanReceive {
     @IBOutlet weak var cardAnswerLabel: UILabel!
     @IBOutlet weak var cardProperties: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
     @IBAction func cardButton(_ sender: Any) {
         
@@ -63,11 +63,7 @@ class ViewController: UIViewController, CanReceive {
             })
             alert.addAction(action)
             present(alert, animated: true, completion: nil)
-//            cardProperties.setTitle(endMsg, for: UIControlState.normal)
-//            cardAnswerLabel.isHidden = true
-//            answershown = false
-//            onWelcomeCard = true
-//            cardIndex = 0
+
         }
 
     }

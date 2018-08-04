@@ -24,21 +24,48 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bb-Hc-W0P" userLabel="Welcome Container">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Biology 1362 Exam 3 Flash Cards" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DEr-2I-9Lt">
-                                        <rect key="frame" x="19" y="35" width="337" height="81"/>
-                                        <color key="backgroundColor" red="0.5799977892" green="0.84135072970000002" blue="0.82817563260000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRw-nw-Jt7">
+                                        <rect key="frame" x="19" y="35" width="337" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Biology 1362 Exam 3" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSo-uh-ebk">
+                                                <rect key="frame" x="0.0" y="0.0" width="337" height="47"/>
+                                                <color key="backgroundColor" red="0.5799977892" green="0.84135072970000002" blue="0.82817563260000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="47" id="JLV-uS-pdd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="27"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flash Cards" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7F1-6H-yfD">
+                                                <rect key="frame" x="0.0" y="47" width="337" height="33"/>
+                                                <color key="backgroundColor" red="0.5799977892" green="0.84135072970000002" blue="0.82817563260000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="3R9-pk-gwc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="27"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="337" id="C9m-92-ZfQ"/>
-                                            <constraint firstAttribute="height" constant="81" id="qbD-5q-igO"/>
+                                            <constraint firstAttribute="trailing" secondItem="kSo-uh-ebk" secondAttribute="trailing" id="8qB-ws-Fug"/>
+                                            <constraint firstItem="7F1-6H-yfD" firstAttribute="top" secondItem="kSo-uh-ebk" secondAttribute="bottom" id="EOm-PK-qUH"/>
+                                            <constraint firstItem="kSo-uh-ebk" firstAttribute="top" secondItem="eRw-nw-Jt7" secondAttribute="top" id="GpA-Ib-ezK"/>
+                                            <constraint firstItem="kSo-uh-ebk" firstAttribute="leading" secondItem="eRw-nw-Jt7" secondAttribute="leading" id="Jd6-gM-aU3"/>
+                                            <constraint firstItem="7F1-6H-yfD" firstAttribute="leading" secondItem="eRw-nw-Jt7" secondAttribute="leading" id="K0j-vC-eUd"/>
+                                            <constraint firstAttribute="trailing" secondItem="7F1-6H-yfD" secondAttribute="trailing" id="Q1t-c6-BXP"/>
+                                            <constraint firstItem="7F1-6H-yfD" firstAttribute="top" secondItem="kSo-uh-ebk" secondAttribute="bottom" id="XZ7-XV-SkD"/>
+                                            <constraint firstAttribute="bottom" secondItem="7F1-6H-yfD" secondAttribute="bottom" id="rm9-Sw-j01"/>
                                         </constraints>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="27"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="DEr-2I-9Lt" firstAttribute="centerY" secondItem="4bb-Hc-W0P" secondAttribute="centerY" id="qlQ-Q9-K7z"/>
-                                    <constraint firstItem="DEr-2I-9Lt" firstAttribute="centerX" secondItem="4bb-Hc-W0P" secondAttribute="centerX" id="tqg-Ii-YJe"/>
+                                    <constraint firstAttribute="bottom" secondItem="eRw-nw-Jt7" secondAttribute="bottom" constant="35" id="9ue-h6-qd8"/>
+                                    <constraint firstItem="eRw-nw-Jt7" firstAttribute="leading" secondItem="4bb-Hc-W0P" secondAttribute="leading" constant="19" id="RwN-BS-o2Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="eRw-nw-Jt7" secondAttribute="trailing" constant="19" id="Y8c-zI-Nu8"/>
+                                    <constraint firstItem="eRw-nw-Jt7" firstAttribute="top" secondItem="4bb-Hc-W0P" secondAttribute="top" constant="35" id="xQL-DP-a9W"/>
                                     <constraint firstAttribute="height" constant="150" id="xpr-mB-jID"/>
                                 </constraints>
                             </view>
@@ -123,7 +150,6 @@
                         <outlet property="background" destination="Rvc-Eh-zxc" id="oNn-KK-Wpr"/>
                         <outlet property="cardAnswerLabel" destination="RR6-mQ-lLz" id="I5q-iI-QR0"/>
                         <outlet property="cardProperties" destination="3gN-MH-D83" id="FQE-bh-PnK"/>
-                        <outlet property="welcomeText" destination="DEr-2I-9Lt" id="lGr-FJ-Xvt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
